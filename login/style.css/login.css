@@ -1,0 +1,104 @@
+.login-form {
+  width: 432px;
+  height: 558px;
+  border-radius: 5px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-form .content-form {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 72px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.login-form .content-form .title {
+  padding-top: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  color: #4F4F4F;
+}
+
+.login-form .content-form .email-form {
+  padding-top: 29px;
+  text-align: left;
+}
+
+.login-form .content-form .password-form {
+  padding-top: 21px;
+  text-align: left;
+}
+
+.login-form .content-form .input-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+  padding-bottom: 8px;
+}
+
+.login-form .content-form .input-form {
+  background: #E0E0E0;
+  border: 0.5px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  width: 304px;
+  height: 40px;
+}
+
+.login-form .content-form .remember-form {
+  display: inline-block;
+  padding-top: 23px;
+}
+
+.login-form .content-form .remember-form .remember-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+  padding-left: 10px;
+  margin-top: -10px;
+  vertical-align: top;
+}
+
+.login-form .content-form .remember-form .test {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #E0E0E0;
+  border: 0.5px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.login-form .content-form .submit-form {
+  padding-top: 27px;
+}
+
+.login-form .content-form .submit-form .button-submit {
+  width: 304px;
+  height: 40px;
+  background: #828282;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+  color: white;
+  text-align: center;
+}
+/*# sourceMappingURL=login.css.map */

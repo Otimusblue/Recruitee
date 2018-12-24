@@ -1,0 +1,167 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 1fr;
+      grid-template-columns: 400px 1fr;
+  -ms-grid-rows: 64px 1fr;
+      grid-template-rows: 64px 1fr;
+      grid-template-areas: "header header" "sidebar main";
+  height: 100vh;
+}
+
+.grid-container .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  background: #BDBDBD;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "logo options";
+}
+
+.grid-container .header .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-left: 16px;
+}
+
+.grid-container .header .options {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: options;
+  padding-top: 10px;
+}
+
+.grid-container .header .options .career-site {
+  width: 96px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 5px;
+  background: #F2F2F2;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.grid-container .header .options .dot {
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.grid-container .sidebar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  background-color: #394263;
+  -ms-grid-columns: 112px 288px;
+      grid-template-columns: 112px 288px;
+      grid-template-areas: "first second";
+}
+
+.grid-container .sidebar .first-side {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: first;
+  background-color: antiquewhite;
+  display: -ms-grid;
+  display: grid;
+  background: #828282;
+  -ms-grid-rows: (88px)[6];
+      grid-template-rows: repeat(6, 88px);
+}
+
+.grid-container .sidebar .first-side .item {
+  margin-top: 16px;
+  padding-bottom: 13px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+  color: white;
+}
+
+.grid-container .sidebar .first-side .item img {
+  margin-bottom: 13px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24px;
+  height: 24px;
+  background: #394263;
+}
+
+.grid-container .sidebar .second-side {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: second;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (56px)[4];
+      grid-template-rows: repeat(4, 56px);
+}
+
+.grid-container .sidebar .second-side .item {
+  width: 24px;
+  height: 24px;
+  background: #828282;
+}
+
+.grid-container .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 104px 1fr;
+      grid-template-rows: 104px 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+      grid-template-areas: "candicates jobs" "graph graph";
+  background-color: #8fd4d9;
+}
+
+.grid-container .main .candicates {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: candicates;
+  background-color: mediumspringgreen;
+}
+
+.grid-container .main .jobs {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: jobs;
+  background-color: chocolate;
+}
+
+.grid-container .main .graph {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: graph;
+  background-color: aqua;
+}
+/*# sourceMappingURL=dashboard.css.map */

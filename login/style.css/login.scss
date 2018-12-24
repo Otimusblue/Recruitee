@@ -1,0 +1,82 @@
+@mixin  default-font($font-size){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: $font-size;
+    color: #4F4F4F;
+}
+.login-form {
+    width: 432px;
+    height: 558px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    .content-form {
+        // text-align: center;
+        display: grid;
+        padding-top: 72px;
+        padding-left: 64px;
+        padding-right: 64px;
+        .title {
+            padding-top:18px;
+            @include default-font(24px);
+        }
+        .email-form{
+            padding-top:29px;
+            text-align: left;
+        }
+        .password-form{
+            padding-top:21px;
+            text-align: left;
+        }
+        .input-title {
+            @include default-font(16px);
+            padding-bottom: 8px;
+            
+        }
+        .input-form{
+            background: #E0E0E0;
+            border: 0.5px solid #BDBDBD;
+            box-sizing: border-box;
+            border-radius: 5px;
+            width: 304px;
+            height: 40px;
+        }
+        .remember-form{
+            display: inline-block;
+            padding-top:23px;
+            .remember-title {
+                @include default-font(16px);
+                padding-left: 10px;
+                margin-top:-10px;
+                vertical-align: top;
+            }
+            .test{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background: #E0E0E0;
+                border: 0.5px solid #BDBDBD;
+                box-sizing: border-box;
+                border-radius: 2px;
+            }
+            
+        }
+        .submit-form{
+            padding-top: 27px;
+            .button-submit {
+                width: 304px;
+                height: 40px;
+                background: #828282;
+                border-radius: 5px;
+                @include default-font(16px);
+                color: white;
+                text-align: center;
+               
+            }
+        }
+        
+        
+    }
+}
