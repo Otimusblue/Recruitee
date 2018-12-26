@@ -6,6 +6,13 @@
   font-size: $font-size;
   color: #4F4F4F;
 }
+@mixin line($margin){
+  width: 100%;
+  height: 3px;
+  background: #394263;
+  margin-top: $margin;
+}
+
 $border-default : 5px;
 .grid-container{
   display: grid;
@@ -140,16 +147,90 @@ $border-default : 5px;
       }
     }
     .graph{
+    
       border-radius: $border-default;
       background: #BDBDBD;
       display: grid;
-      grid-template-rows: 0,5fr 6fr 1fr;
+      grid-template-rows: 0.5fr 6fr 1fr;
       .graph-header{
-        background: aqua; 
+        .header-line {
+          @include line(56px);
+        }
+        .graph-header-title{
+           margin: 0 auto;
+        }
       }
+      .graph-content{
+        justify-items: center;
+        .my-graph{
+          height: 300px;
+        }
+        .content-line{
+        @include line(624px);
+        }
       
+      }
+      .graph-footer{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+        .amount-email{
+          border-right-style: solid;
+          border-right-width: 1px;
+          .email-title{
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            @include default-font(16px);
+           }
+          .email-amount{
+            padding-left: 16px;
+          font-size: 24px;
+          }
+       }
+        .amount-careersite{
+          border-right-style: solid;
+          border-right-width: 1px;
+          .career-title{
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            @include default-font(16px);
+          }
+          .career-amount{
+            padding-left: 16px;
+            font-size: 24px;
+          }
+        }
+        .amount-manually{
+          border-right-style: solid;
+          border-right-width: 1px;
+          .manually-title{
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            @include default-font(16px);
+        }
+          .manually-amount{
+          padding-left: 16px;
+          font-size: 24px;
+        }
+        }
+        .amount-sourced{
+          .sourced-title{
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            @include default-font(16px);
+          }
+          .sourced-amount{
+            padding-left: 16px;
+            font-size: 24px;
+          }
+        }
+      }
+
     }
-   
+    
  
   }
 

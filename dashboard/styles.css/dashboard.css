@@ -204,11 +204,123 @@
   background: #BDBDBD;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0,5fr 6fr 1fr;
-      grid-template-rows: 0,5fr 6fr 1fr;
+  -ms-grid-rows: 0.5fr 6fr 1fr;
+      grid-template-rows: 0.5fr 6fr 1fr;
 }
 
-.grid-container .main .graph .graph-header {
-  background: aqua;
+.grid-container .main .graph .graph-header .header-line {
+  width: 100%;
+  height: 3px;
+  background: #394263;
+  margin-top: 56px;
+}
+
+.grid-container .main .graph .graph-header .graph-header-title {
+  margin: 0 auto;
+}
+
+.grid-container .main .graph .graph-content {
+  justify-items: center;
+}
+
+.grid-container .main .graph .graph-content .my-graph {
+  height: 300px;
+}
+
+.grid-container .main .graph .graph-content .content-line {
+  width: 100%;
+  height: 3px;
+  background: #394263;
+  margin-top: 624px;
+}
+
+.grid-container .main .graph .graph-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-container .main .graph .graph-footer .amount-email {
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.grid-container .main .graph .graph-footer .amount-email .email-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.grid-container .main .graph .graph-footer .amount-email .email-amount {
+  padding-left: 16px;
+  font-size: 24px;
+}
+
+.grid-container .main .graph .graph-footer .amount-careersite {
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.grid-container .main .graph .graph-footer .amount-careersite .career-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.grid-container .main .graph .graph-footer .amount-careersite .career-amount {
+  padding-left: 16px;
+  font-size: 24px;
+}
+
+.grid-container .main .graph .graph-footer .amount-manually {
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.grid-container .main .graph .graph-footer .amount-manually .manually-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.grid-container .main .graph .graph-footer .amount-manually .manually-amount {
+  padding-left: 16px;
+  font-size: 24px;
+}
+
+.grid-container .main .graph .graph-footer .amount-sourced .sourced-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.grid-container .main .graph .graph-footer .amount-sourced .sourced-amount {
+  padding-left: 16px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=dashboard.css.map */

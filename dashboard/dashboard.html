@@ -51,9 +51,78 @@
         </div>
       </div>
       <div class="graph">
-            <div class="graph-header">Header</div>
-            <div class="graph-content">Content</div>
-            <div class="graph-footer">Footer</div>
+            <div class="graph-header">
+              <div class="graph-header-title">Candidates</div>
+              <div class="graph-header-dropdown"></div>
+              <div class="header-line"></div>
+            </div>
+            <div class="graph-content">Content 
+              <!-- <div class="my-graph">
+                <canvas id="myChart" width="300" height="300"></canvas>
+                <script>
+                var ctx = document.getElementById("myChart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ["5th Dec", "10th Dec", "15t Dec", "20th Dec", "25th Dec", "30th Dec"],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255,99,132,1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                      responsive: true,
+                       maintainAspectRatio: false,
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true
+                                }
+                            }]
+                        }
+                    }
+                });
+                </script>
+                </div> -->
+              <div class="content-line"></div>
+            </div>
+            <div class="graph-footer">
+              <div class="amount-careersite">
+                <div class="career-title">Applied via career site</div>
+                <div class="career-amount">50</div>
+              </div>
+              <div class="amount-email">
+
+                <div class="email-title">Applied via email</div>
+                <div class="email-amount">50</div>
+
+              </div>
+              <div class="amount-manually">
+                <div class="manually-title">Added manually</div>
+                <div class="manually-amount">5</div>
+              </div>
+              <div class="amount-sourced">
+                  <div class="sourced-title">Added manually</div>
+                  <div class="sourced-amount">20</div>
+              </div>
+            </div>
         </div>
       </main>
   </div>
