@@ -204,7 +204,18 @@
   background: #BDBDBD;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2fr 3fr;
-      grid-template-rows: 1fr 2fr 3fr;
+  -ms-grid-rows: 0.5fr 6fr 1fr;
+      grid-template-rows: 0.5fr 6fr 1fr;
+}
+
+.grid-container .main .graph .graph-header .header-line {
+  width: 100%;
+  height: 3px;
+  background: #394263;
+  margin-top: 56px;
+}
+
+.grid-container .main .graph .graph-header .graph-header-title {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=dashboard.css.map */
