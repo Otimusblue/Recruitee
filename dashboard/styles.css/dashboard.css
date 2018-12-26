@@ -5,7 +5,7 @@
       grid-template-columns: 400px 1fr;
   -ms-grid-rows: 64px 1fr;
       grid-template-rows: 64px 1fr;
-      grid-template-areas: "header header" "sidebar main";
+      grid-template-areas: "header header" "sidebar main";
   height: 100vh;
 }
 
@@ -204,7 +204,11 @@
   background: #BDBDBD;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2fr 3fr;
-      grid-template-rows: 1fr 2fr 3fr;
+  -ms-grid-rows: 0,5fr 6fr 1fr;
+      grid-template-rows: 0,5fr 6fr 1fr;
+}
+
+.grid-container .main .graph .graph-header {
+  background: aqua;
 }
 /*# sourceMappingURL=dashboard.css.map */
