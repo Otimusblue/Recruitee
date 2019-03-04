@@ -41,18 +41,14 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
     function Dashboard ({ match }) {
         
         return (
-        <div>
-            <ul class="sub-bar">
+        <div className="sidebar">
+            <ul className="sub-bar">
             {dashboardmenu.map(({ name, id }) => (
                 <li key={id}>
-                {/* <img src={logo} alt="Logo" height="24px" width="24px"/> */}
                 <Link to={`/home/${id}`}>{name}</Link>
                 </li>
             ))}
             </ul>
-    
-        
-    
             <Route path={`/home/:topicId`} component={dashboardItem}/>
         </div>
         )

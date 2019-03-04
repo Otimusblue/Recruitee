@@ -86,7 +86,7 @@ function Topics({ match }) {
 function baseRouting(){
     return (
        <Router>
-           <div>
+           <div className="container">
             <ul className="main-bar">
                 <li><Link to="/home">Dashboard</Link></li>
                 <li><Link to="/candidates">Candidates</Link></li>

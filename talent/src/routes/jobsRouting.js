@@ -28,7 +28,7 @@ function jobsItem ({match}) {
      
     return (
       <div>
-        <ul>
+        <ul className="sub-bar"> 
           {jobsmenu.map(({ name, id }) => (
             <li key={id}>
               <Link to={`/jobs/${id}`}>{name}</Link>
