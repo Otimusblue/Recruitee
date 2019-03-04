@@ -1,8 +1,10 @@
+
 ul {
    list-style-type: none;   
    cursor: pointer;
    width: 112px;
    height: 88.37px;
+   display: inline inline-block;
 }
 .side-bar{
     .main-bar {
@@ -31,4 +33,7 @@ ul {
     image {
         
     }
+}
+.blockTitle {
+    
 }
