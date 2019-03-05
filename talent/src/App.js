@@ -8,7 +8,12 @@ class App extends Component {
   render() {
     return (
       <div id="App" >
+<<<<<<< Updated upstream
        kkkkkk
+=======
+
+    
+>>>>>>> Stashed changes
      </div>
     );
   }
