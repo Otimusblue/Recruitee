@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-// import '../styles/dashboard.scss';  
+ import styles from '../styles/baseRouting.scss';  
 // import logo from '../images/default.png';
     const dashboardmenu  = [
         {
             name: 'Overview',
             image:'',
             id: 'overview',
-            content:'1'
+            content:'1',
         },
         {
             name: 'Tasks',
@@ -41,8 +41,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
     function Dashboard ({ match }) {
         
         return (
-        <div className="sidebar">
-            <ul className="sub-bar">
+        <div>
+            <ul className={styles.subBar}>
             {dashboardmenu.map(({ name, id }) => (
                 <li key={id}>
                 <Link to={`/home/${id}`}>{name}</Link>
@@ -50,7 +50,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
             ))}
             </ul>
             <Route path={`/home/:topicId`} component={dashboardItem}/>
-        </div>
+            </div>
         )
     }
     export default Dashboard;

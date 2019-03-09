@@ -1,7 +1,7 @@
 
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import '../styles/baseRouting.scss';
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
+import style from '../styles/baseRouting.scss';
 import Dashboard from './dashboardRouting.js';
 import Jobs from './jobsRouting.js';
 
@@ -82,31 +82,64 @@ function Topics({ match }) {
       </div>
     );
   }
+const menuData = [
+    {
+        url:'/home',
+        name:'Dashboard',
+    },
+    {
+        url:'/candidates',
+        name:'Candidates',
+    },
+    {
+        url:'/jobs',
+        name:'Jobs',
+    },
+    {
+        url:'/mailbox',
+        name:'Mailbox',
+    },
+    {
+        url:'/reports',
+        name:'Reports',
+    },
+    {
+        url:'/setting',
+        name:'Settings',
+    },
+    {
+        url:'/topics',
+        name:'Topics',
+    }
+]
 
-function baseRouting(){
-    return (
-       <Router>
-           <div className="container">
-            <ul className="main-bar">
-                <li><Link to="/home">Dashboard</Link></li>
-                <li><Link to="/candidates">Candidates</Link></li>
-                <li><Link to="/jobs">Jobs</Link></li>
-                <li><Link to="/mailbox">Mailbox</Link></li>
-                <li><Link to="/reports">Reports</Link></li>
-                <li><Link to="/setting">Setting</Link></li>
-                <li><Link to="/topics">Topics</Link></li>
-
-                <Route path='/home' component={Dashboard} />
-                <Route path='/candidates' component={Candidates} />
-                <Route path='/jobs' component={Jobs} />
-                <Route path='/mailbox' component={Mailbox} />
-                <Route path='/reports' component={Reports} />
-                <Route path='/setting' component={Setting} />
-                <Route path="/topics" component={Topics} />
-                </ul>
-            </div>
-       </Router>
+function baseRouting(props){
+   
+        console.log(props);
+        const renderMenuData = menuData.map((itemData,index) =>
+        <li key={index} className={style.mainBarItem}>
+            <Link to={`${itemData.url}`}>{itemData.name}</Link>
+        </li>
         )
+        return (
+           <Router>
+               <div className={style.sideBar}>
+                <ul className={style.mainBar}>
+                    {renderMenuData}
+    
+                    <Route path='/home' component={Dashboard} />
+                    <Route path='/candidates' component={Candidates} />
+                    <Route path='/jobs' component={Jobs} />
+                    <Route path='/mailbox' component={Mailbox} />
+                    <Route path='/reports' component={Reports} />
+                    <Route path='/setting' component={Setting} />
+                    <Route path="/topics" component={Topics} />
+                    </ul>
+                </div>
+           </Router>
+            )
+        
+    
     
 }
 export default baseRouting;
