@@ -1,0 +1,32 @@
+@mixin  default-font($font-size){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: $font-size;
+    color: #4F4F4F;
+  }
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid black;
+    display:grid;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"logo options";
+    .logo {
+        grid-area: logo;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        margin-left: 16px;
+      }
+      .options {
+        justify-self: end;
+        grid-area: options;
+        padding-top: 10px;
+        margin-right: 10px;
+    .careerSite{
+        background: #F15D03;
+        color:#FFFFFF;
+    }
+      }
+    }

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-d
 import style from '../styles/baseRouting.scss';
 import Dashboard from './dashboardRouting.js';
 import Jobs from './jobsRouting.js';
+import logo from '../images/logo.png'; 
 
 const candidatesmenu = [
     {
@@ -86,39 +87,47 @@ const menuData = [
     {
         url:'/home',
         name:'Dashboard',
+        image:'logo',
     },
     {
         url:'/candidates',
         name:'Candidates',
+        image:'ddd',
     },
     {
         url:'/jobs',
         name:'Jobs',
+        image:'',
     },
     {
         url:'/mailbox',
         name:'Mailbox',
+        image:'',
     },
     {
         url:'/reports',
         name:'Reports',
+        image:'',
     },
     {
         url:'/setting',
         name:'Settings',
+        image:'',
     },
     {
         url:'/topics',
         name:'Topics',
+        image:'',
     }
 ]
 
 function baseRouting(props){
-   
         console.log(props);
         const renderMenuData = menuData.map((itemData,index) =>
-        <li key={index} className={style.mainBarItem}>
-            <Link to={`${itemData.url}`}>{itemData.name}</Link>
+        <li key={index} className={style.mainBarItem}>     
+            <Link to={`${itemData.url}`}>
+            <image src={`../images/${itemData.image}.png`} alt="Logo" /><br />
+            {itemData.name}</Link>
         </li>
         )
         return (

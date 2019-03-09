@@ -4,6 +4,7 @@ import './App.css';
 import BaseRouting from './routes/baseRouting.js';
 import Title from './components/overview/title.js';
 import Header from './components/header/header';
+import Overview from './components/overview/overview.js';
 
 class App extends Component {
   render() {
@@ -11,7 +12,8 @@ class App extends Component {
       <div id="App" >
        <Header />
        <BaseRouting />
-
+       <Overview />
+       
      </div>
     );
   }

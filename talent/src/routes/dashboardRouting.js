@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
- import styles from '../styles/baseRouting.scss';  
-// import logo from '../images/default.png';
+import styles from '../styles/baseRouting.scss'; 
+
     const dashboardmenu  = [
         {
             name: 'Overview',
@@ -44,7 +44,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
         <div>
             <ul className={styles.subBar}>
             {dashboardmenu.map(({ name, id }) => (
-                <li key={id}>
+                // <img src={image} />
+                <li className={styles.subBarItem} key={id}>
                 <Link to={`/home/${id}`}>{name}</Link>
                 </li>
             ))}
