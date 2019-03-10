@@ -5,7 +5,9 @@ class OverView extends React.Component{
     render(){
         return(
             <div>
-            <Title />
+            <Title title='hieu' amount='100'/>
+            <br />
+            <Title title='aaa' amount='200' />
             </div>
         )
     }

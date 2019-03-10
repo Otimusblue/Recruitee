@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import styles from '../styles/baseRouting.scss'; 
 const jobsmenu = [
     {
         name: 'Actives Jobs',

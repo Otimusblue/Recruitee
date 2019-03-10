@@ -13,7 +13,12 @@ function Title(props){
     // </div>
     <div class="titleContainer">
     <div class="ui segment">
-     <p>AHIHI</p>
+       <div className="title">
+          {props.title}
+       </div>
+         <div className="amount">
+          {props.amount}
+       </div>
       </div>
       </div>
     );
